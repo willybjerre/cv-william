@@ -17,12 +17,39 @@ body {
   
   /* === Header === */
   header {
-    text-align: center;
+    display: flex;                  
+    align-items: center;             
+    justify-content: center;         
     padding: 60px 20px;
     background-color: #e3f2fd;
     border-radius: 12px;
     margin-bottom: 40px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    gap: 30px;                        
+  }
+  
+  picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;               
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;           
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin: 0 auto; 
+    margin-bottom: 40px;           
+  }
+  
+  picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          
+    display: block;
+  }
+  
+  .header-text {
+    text-align: center;              
   }
   
   header h1 {
@@ -43,18 +70,31 @@ body {
     margin-bottom: 20px;
   }
   
-  /* === Buttons === */
+  
+  
+
+  .nav-buttons {
+    text-align: center;    
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .nav-buttons a {
+    display: inline-block; 
+    margin: 0 10px;         
+  }
+  
   button {
     background-color: #1976d2;
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
     border-radius: 6px;
     font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.2s ease;
   }
+  
   button:hover {
     background-color: #1565c0;
   }
@@ -63,10 +103,19 @@ body {
   #about {
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 10px 10px;
+  }
+  
+  .about {
     background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  .about p {
+    margin-bottom: 16px;
+    line-height: 1.7;
   }
   
   /* === Projects === */
@@ -80,7 +129,7 @@ body {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-left: 4px solid #1976d2;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   }
@@ -105,7 +154,7 @@ body {
   #skills {
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 10px 10px;
   }
   
   .skills-grid {
@@ -123,30 +172,79 @@ body {
     padding: 10px 15px;
     border-radius: 6px;
   }
+  #cv {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+  }
   
+  #cv h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1565c0;
+  }
+  
+  /* Boksene med indhold */
+  .cv-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  .cv-block {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .cv-block h3 {
+    font-size: 1.3rem;
+    color: #1976d2;
+    margin-bottom: 10px;
+  }
+  
+  .cv-block ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .cv-block li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
   /* === Contact === */
   #contact {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
+  }
+  
+  .contact-box {
     background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   }
   
-  #contact ul {
+  .contact-box ul {
     list-style-type: none;
     padding-left: 0;
   }
   
-  #contact li {
+  .contact-box li {
     margin-bottom: 10px;
   }
   
-  #contact a {
+  .contact-box a {
     color: #1976d2;
   }
-  #contact a:hover {
+  
+  .contact-box a:hover {
     color: #0d47a1;
   }
   

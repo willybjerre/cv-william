@@ -5,17 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>William Bjerre - Datalogi studerende</title>
 
-  <!-- Link to your CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
-    <h1>William Bjerre</h1>
-    <p>CV</p>
+    <div class="header-text">
+      <h1>William Bjerre</h1>
+      <p>CV</p>
+    </div>
   </header>
 
+  <section id="picture">
+    <picture>
+      <img src="images/Skærmbillede 2025-09-10 kl. 17.47.59.png" alt="picture">
+    </picture>
+  </section>
+  
+  <section class="nav-buttons">
+    <a href="#about"><button>Om Mig</button></a>
+    <a href="#projects"><button>Projekter</button></a>
+    <a href="#skills"><button>Skills</button></a>
+    <a href="#cv"><button>Erfaring & Uddannelse</button></a>
+    <a href="#contact"><button>Kontakt</button></a>
+  </section>
+
   <section id="about">
-    <h2>About Me</h2>
+    <h2>Om Mig</h2>
+    <div class="about">
     <p>
         Mit navn er William Bjerre, og jeg studerer Datalogi på Københavns Universitet, hvor jeg læser på andet år af min bachelor.
         Jeg har en stor interesse for programmering og problemløsning og arbejder løbende med datastrukturer og algoritmer, blandt andet via LeetCode.
@@ -31,10 +47,11 @@
       <p>
         Jeg trives både i samarbejde og med selvstændige opgaver og motiveres af at lære nyt og bidrage i faglige fællesskaber med engagement og struktur.
       </p>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Projekter</h2>
   
     <div class="project">
       <h3>🎮 Breakout Game (C#)</h3>
@@ -63,20 +80,45 @@
 
     </div>
   </section>
+  
+  <section id="cv">
+      <h2>Erfaring & Uddannelse</h2>
+    
+      <div class="cv-grid">
+        <div class="cv-block">
+          <h3>Uddannelse</h3>
+          <ul>
+            <li><strong>Datalogi, Københavns Universitet</strong><br>2024 – nu</li>
+            <li><strong>Stenhus Gymnasium</strong><br>2019 – 2022</li>
+            <li><strong>Stenhus Kostskole</strong><br>2014 – 2019</li>
+          </ul>
+        </div>
+    
+        <div class="cv-block">
+          <h3>Erhvervserfaring</h3>
+          <ul>
+            <li><strong>LetLej</strong> (2023 – 2025)<br>Drift og kundeservice i udlejningsbranchen</li>
+            <li><strong>Webhelp</strong> (2022 – 2023)<br>teknisk advisor og kommunikation</li>
+            <li><strong>Kulturbiografen</strong> (2018 – 2021)<br>Servicemedarbejder</li>
+            <li><strong>Hjemmeplejen</strong> (2019 – 2021)</li>
+          </ul>
+        </div>
+      </div>
+  </section>
 
-  <section id="contact">
+  <section id="contact" class="section-wrapper">
     <h2>Kontakt</h2>
-    <p>Du er velkommen til at kontakte mig:</p>
-    <ul>
-      <li><strong>📧 Email:</strong> <a href="mailto:willybjerre@gmail.com">willybjerre@gmail.com</a></li>
-      <li><strong>📱 Telefon:</strong> +45 25 31 89 20</li>
-    </ul>
+    <div class="contact-box">
+      <ul>
+        <li><strong>📧 Email:</strong> <a href="mailto:willybjerre@gmail.com">willybjerre@gmail.com</a></li>
+        <li><strong>📱 Telefon:</strong> +45 25 31 89 20</li>
+      </ul>
+    </div>
   </section>
   
   <footer>
     <p>© 2025 William Bjerre</p>
   </footer>
-  <!-- Link to your JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
