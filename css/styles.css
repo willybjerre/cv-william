@@ -257,3 +257,70 @@ body {
     margin-top: 40px;
     font-size: 0.9rem;
   }
+
+  /* === Mobile Optimizations === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  picture {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid,
+  .cv-grid {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  .cv-block,
+  .skills-grid div,
+  .about,
+  .contact-box {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .nav-buttons a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  #about,
+  #skills,
+  #projects,
+  #cv,
+  #contact {
+    padding: 20px 10px;
+  }
+}
